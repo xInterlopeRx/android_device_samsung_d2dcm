@@ -20,8 +20,8 @@
 # definition file).
 #
 
-# inherit from common D2
--include device/samsung/d2-common/BoardConfigCommon.mk
+# inherit from common d2lte
+-include device/samsung/d2lte/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/d2dcm/BoardConfigVendor.mk
@@ -31,7 +31,11 @@ TARGET_OTA_ASSERT_DEVICE := d2dcm
 
 # Kernel
 TARGET_KERNEL_CONFIG        := cyanogen_d2dcm_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := 
+
+	# We are not them unified devices :(
+#TARGET_UNIFIED_DEVICE :=
+#TARGET_INIT_VENDOR_LIB :=
+#TARGET_LIBINIT_DEFINES_FILE :=
 
 TARGET_BOARD_INFO_FILE ?= device/samsung/d2dcm/board-info.txt
 
