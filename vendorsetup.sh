@@ -1,2 +1,2 @@
-add_lunch_combo carbon_d2dcm-eng
+add_lunch_combo cm_d2dcm-userdebug
 
